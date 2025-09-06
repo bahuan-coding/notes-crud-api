@@ -67,8 +67,8 @@ else
 fi
 
 echo ""
-echo "⏳ Waiting 1 second before next request..."
-sleep 1
+echo "⏳ Waiting 5 seconds before next request..."
+sleep 5
 
 # Step 2: List All Notes
 echo -e "${BLUE}===========================================${NC}"
@@ -90,8 +90,8 @@ else
 fi
 
 echo ""
-echo "⏳ Waiting 1 second before next request..."
-sleep 1
+echo "⏳ Waiting 5 seconds before next request..."
+sleep 5
 
 # Step 3: Get Note by ID
 echo -e "${BLUE}===========================================${NC}"
@@ -113,8 +113,8 @@ else
 fi
 
 echo ""
-echo "⏳ Waiting 1 second before next request..."
-sleep 1
+echo "⏳ Waiting 5 seconds before next request..."
+sleep 5
 
 # Step 4: Update Note
 echo -e "${BLUE}===========================================${NC}"
@@ -141,8 +141,8 @@ else
 fi
 
 echo ""
-echo "⏳ Waiting 1 second before next request..."
-sleep 1
+echo "⏳ Waiting 5 seconds before next request..."
+sleep 5
 
 # Step 5: Delete Note
 echo -e "${BLUE}===========================================${NC}"
@@ -164,8 +164,8 @@ else
 fi
 
 echo ""
-echo "⏳ Waiting 1 second before verification..."
-sleep 1
+echo "⏳ Waiting 5 seconds before verification..."
+sleep 5
 
 # Step 5b: Verify Deletion
 echo -e "${YELLOW}🔍 Verifying deletion - attempting to get deleted note...${NC}"
@@ -176,8 +176,8 @@ echo "📄 Verification Response (should show 404 Not Found):"
 echo "${VERIFY_RESPONSE}" | jq '.' 2>/dev/null || echo "${VERIFY_RESPONSE}"
 
 echo ""
-echo "⏳ Waiting 1 second before final check..."
-sleep 1
+echo "⏳ Waiting 5 seconds before final check..."
+sleep 5
 
 # Step 6: Health Check
 echo -e "${BLUE}===========================================${NC}"
